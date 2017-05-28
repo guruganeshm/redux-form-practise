@@ -1,5 +1,14 @@
 import React from "react";
-import { FormGroup, FieldGroup, Radio, Checkbox, ControlLabel, FormControl, HelpBlock, Button } from "react-bootstrap";
+import {
+	FormGroup,
+	FieldGroup,
+	Radio,
+	Checkbox,
+	ControlLabel,
+	FormControl,
+	HelpBlock,
+	Button
+} from "react-bootstrap";
 
 class FormComponent extends React.Component {
 	render() {
