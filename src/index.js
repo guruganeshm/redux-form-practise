@@ -1,13 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { reduxForm } from "redux-form";
 import { createStore } from "redux";
 import { Provider } from "react-redux";
 import registerServiceWorker from "./registerServiceWorker";
 import "bootstrap/dist/css/bootstrap.css";
-import Form from "./components/formComponent";
+import SampleForm from "./components/simpleForm";
+import reducers from "./reducers";
 
-const store = createStore(() => ({}));
 
-ReactDOM.render(<Form />, document.getElementById("root"));
+ReactDOM.render(
+	<Provider store={createStore(reducers)}>
+		<SampleForm />
+	</Provider>,
+	document.getElementById("root")
+);
 registerServiceWorker();
